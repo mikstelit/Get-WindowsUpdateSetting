@@ -3,7 +3,7 @@
    Outputs the Windows Update setting on a computer.
 .DESCRIPTION
    Takes a string array of computer names and outputs 
-   to the screen the computer's Windows Update setting.
+   the computer's Windows Update setting.
 .EXAMPLE
    Get-WindowsUpdateSetting $ComputerNames
 .EXAMPLE
@@ -63,7 +63,7 @@ Function Get-WindowsUpdateSetting
                 'UpdateSetting' = $UpdateSetting
                 }
 
-            Write-Output ('{0}: {1}' -f $System.Name,$System.UpdateSetting)
+            $System
         }
     }
 }
